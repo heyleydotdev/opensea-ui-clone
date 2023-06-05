@@ -4,6 +4,8 @@
 
 This repository contains a clone of the OpenSea UI home page, built using Vite, React, Tailwind CSS, and Swiper. The clone aims to replicate the user interface of the OpenSea platform's home page.
 
+**Demo:** https://opensea-ui-clone.pages.dev/
+
 ## Table of Contents
 
 - [Features](#features)
