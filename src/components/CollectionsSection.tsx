@@ -49,7 +49,7 @@ export default function CollectionsSection({ title }: { title: string }) {
           className="collections-slide"
         >
           {shuffledData.map((item, i) => (
-            <SwiperSlide>
+            <SwiperSlide key={i}>
               <div
                 className="cursor-pointer overflow-hidden rounded-2xl shadow duration-200 will-change-transform hover:-translate-y-1 hover:shadow-md sm:w-full"
                 key={i}

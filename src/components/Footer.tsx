@@ -34,6 +34,7 @@ export default function Footer() {
             <div className="mt-4 inline-flex gap-x-2">
               {['twitter', 'instagram', 'reddit', 'youtube', 'email'].map((social) => (
                 <SocialIcon
+                  key={social}
                   url="#"
                   network={social}
                   className="[&_svg]:!rounded-xl [&_svg]:border [&_svg]:border-footer-button [&_svg]:hover:brightness-110"
@@ -96,8 +97,8 @@ export default function Footer() {
 function FooterLinks({ links }: { links: string[] }) {
   return (
     <ul className="space-y-2">
-      {links.map((link) => (
-        <li>
+      {links.map((link, i) => (
+        <li key={i}>
           <a href="#" className="text-sm hover:font-medium">
             {link}
           </a>
